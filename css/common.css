@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body {
+  font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,\5FAE\8F6F\96C5\9ED1,tahoma,simsun,\5b8b\4f53;
+  color: #333;
+}
+
+.wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: visible;
+}
+
+.clearfix {
+  *zoom: 1;
+}
