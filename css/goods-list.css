@@ -1,9 +1,74 @@
-.goods-container .goods-app-download {
+.goods-container .app-download-wrap {
   width: 100%;
-  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
 }
-.goods-container .goods-app-download img {
-  width: 100%;
+.goods-container .app-download-wrap .download {
+  position: relative;
+  left: -415px;
+}
+.goods-container .app-download-wrap .app-download {
+  position: relative;
+}
+.goods-container .app-download-wrap .app-download a {
+  display: block;
+}
+.goods-container .app-download-wrap .app-download a:hover {
+  color: #fe060c;
+}
+.goods-container .app-download-wrap .app-download .index-left {
+  position: absolute;
+  top: 0;
+  left: -109px;
+  width: 99px;
+  text-align: center;
+  background-color: #fff;
+}
+.goods-container .app-download-wrap .app-download .index-left ul a {
+  display: block;
+}
+.goods-container .app-download-wrap .app-download .index-left ul a:hover {
+  background-color: #eee;
+}
+.goods-container .app-download-wrap .app-download .index-left ul li {
+  height: 36px;
+  line-height: 36px;
+  font-size: 12px;
+}
+.goods-container .app-download-wrap .app-download .index-left ul .first {
+  font-weight: 700;
+  line-height: 50px;
+  height: 50px;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+}
+.goods-container .app-download-wrap .app-download .index-left ul .first a {
+  color: #000;
+}
+.goods-container .app-download-wrap .app-download .index-left ul .first a:hover {
+  color: #fe060c;
+  background-color: #eee;
+}
+.goods-container .app-download-wrap .app-download .index-right {
+  position: absolute;
+  top: 0;
+  right: -71px;
+  color: #999;
+}
+.goods-container .app-download-wrap .app-download .index-right ul {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  width: 61px;
+}
+.goods-container .app-download-wrap .app-download .index-right ul li {
+  height: 61px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .goods-container .goods-item {
   font-size: 14px;
@@ -61,17 +126,27 @@
   border-radius: 42px;
   margin-right: 10px;
   line-height: 40px;
+  background-color: #fff;
 }
 .goods-container .goods-item .goods-img .goods-c {
   width: 550px;
   display: flex;
   flex-wrap: wrap;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
 }
 .goods-container .goods-item .goods-img .goods-c .goods-c-i {
-  width: 50%;
+  width: calc(50% - 2px);
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.goods-container .goods-item .goods-img .goods-c .goods-c-i h3 {
+  padding-top: 20px;
 }
 .goods-container .goods-item .goods-img .goods-r {
   width: 220px;
+  background-color: #fff;
 }
 .goods-container .goods-item .goods-img .goods-r h3 {
   height: 60px;
@@ -82,7 +157,7 @@
   display: flex;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 10px;
   transform: translate(0, -50%);
 }
 .goods-container .goods-item .goods-img .goods-r h3 ul li {
@@ -120,9 +195,301 @@
 .goods-container .goods-item .goods-img .goods-r .current-hot li div .old-price {
   color: #ccc;
   text-decoration: line-through;
+  font-weight: normal;
 }
 .goods-container .goods-item .goods-img .goods-r .current-hot li div .new-price {
   color: #fe060c;
   font-size: 20px;
   margin-right: 10px;
+}
+.goods-container .hot-brand-wrap {
+  margin-top: 20px;
+}
+.goods-container .hot-brand-wrap .hot-brand-title {
+  height: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  padding-left: 20px;
+  font-size: 20px;
+  background-color: #fff;
+}
+.goods-container .hot-brand-wrap .hot-brand-img {
+  display: flex;
+  height: 167px;
+}
+.goods-container .hot-brand-wrap .hot-brand-img li {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #eee;
+  display: flex;
+}
+.goods-container .hot-brand-wrap .hot-brand-img li img {
+  width: 120px;
+  height: 120px;
+  margin: auto auto;
+}
+.goods-container .hot-shop-wrap .hot-shop-title {
+  font-weight: normal;
+  font-size: 14px;
+  padding: 20px 0 10px;
+}
+.goods-container .hot-shop-wrap .hot-shop-title span {
+  margin-right: 6px;
+  color: #999;
+}
+.goods-container .hot-shop-wrap .hot-shop-title .big {
+  color: #000;
+}
+.goods-container .hot-shop-wrap .hot-shop-title .right {
+  float: right;
+}
+.goods-container .hot-shop-wrap .hot-shop-img {
+  display: flex;
+  background-color: #fff;
+}
+.goods-container .hot-shop-wrap .hot-shop-img .shop-img-left {
+  width: 219px;
+  text-align: center;
+  font-size: 16px;
+}
+.goods-container .hot-shop-wrap .hot-shop-img .shop-img-left img {
+  width: 100%;
+  height: 219px;
+}
+.goods-container .hot-shop-wrap .hot-shop-img .shop-img-left .progress {
+  width: 33.33%;
+  height: 1px;
+  background-color: #fe060c;
+  margin-bottom: 30px;
+}
+.goods-container .hot-shop-wrap .shop-img-right {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.goods-container .hot-shop-wrap .shop-img-right .shop-img-item {
+  position: relative;
+}
+.goods-container .hot-shop-wrap .shop-img-right .shop-img-item:hover img {
+  transform: translateY(-20px) scale(0.7);
+}
+.goods-container .hot-shop-wrap .shop-img-right .shop-img-item:hover .hidden {
+  opacity: 0;
+}
+.goods-container .hot-shop-wrap .shop-img-right .shop-img-item:hover .hover {
+  display: block;
+}
+.goods-container .hot-shop-wrap .shop-img-right .shop-img-item .origin {
+  box-sizing: border-box;
+  width: 220px;
+  height: 176px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.goods-container .hot-shop-wrap .shop-img-right .shop-img-item .origin img {
+  width: 120px;
+  height: 120px;
+  transition: all 0.3s;
+}
+.goods-container .hot-shop-wrap .shop-img-right .shop-img-item .hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.goods-container .hot-shop-wrap .shop-img-right .shop-img-item .hover .follow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 10px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+}
+.goods-container .hot-shop-wrap .shop-img-right .shop-img-item .hover .enter {
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 16px;
+  border: 1px solid;
+  color: #fe060c;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.goods-container .hot-shop-wrap .shop-img-right .shop-img-item .hover .followers {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.goods-container .guess-like-wrap {
+  margin-top: 50px;
+}
+.goods-container .guess-like-wrap .guess-like h4 {
+  font-size: 20px;
+}
+.goods-container .guess-like-wrap .guess-like h4 span {
+  font-size: 14px;
+  color: #999;
+  font-weight: 400;
+  padding-left: 20px;
+}
+.goods-container .guess-like-wrap .guess-like .goods-item {
+  height: 382px;
+  display: flex;
+}
+.goods-container .guess-like-wrap .guess-like .goods-item li {
+  margin-right: 20px;
+  width: 260px;
+}
+.goods-container .guess-like-wrap .guess-like .goods-item li .img-wrap {
+  padding: 40px;
+  background-color: #fff;
+  display: inline-block;
+}
+.goods-container .guess-like-wrap .guess-like .goods-item li .img-wrap img {
+  width: 180px;
+  height: 180px;
+}
+.goods-container .guess-like-wrap .guess-like .goods-item li .goods-info {
+  margin-top: 30px;
+}
+.goods-container .guess-like-wrap .guess-like .goods-item li .goods-info a {
+  padding-right: 10px;
+  font-weight: 700;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.goods-container .guess-like-wrap .guess-like .goods-item li .goods-price {
+  padding-top: 10px;
+}
+.goods-container .guess-like-wrap .guess-like .goods-item li .goods-price p {
+  font-weight: 700;
+  color: #fe060c;
+  font-size: 20px;
+  line-height: 16px;
+}
+.goods-container .guess-like-wrap .guess-like .goods-item li .goods-price p a {
+  color: #ccc;
+  float: right;
+  font-size: 14px;
+  font-weight: 400;
+}
+.goods-container .collect-options {
+  margin-top: 60px;
+  padding-top: 30px;
+  background-color: #fff;
+}
+.goods-container .collect-options a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  box-shadow: 0 0 8px #f1f1f1;
+}
+.footer-wrap {
+  margin-top: 60px;
+  background-color: #fff;
+}
+.footer-wrap .service {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #eee;
+}
+.footer-wrap .service li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.footer-wrap .service li .icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-wrap .service li .info {
+  flex: 1;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-wrap .service li .info span {
+  font-size: 14px;
+}
+.footer-wrap .guide-wrap {
+  height: 260px;
+  padding-top: 40px;
+}
+.footer-wrap .guide-wrap .guide {
+  display: flex;
+  padding-right: 200px;
+}
+.footer-wrap .guide-wrap .guide .logo a {
+  overflow: hidden;
+  display: block;
+  width: 220px;
+  height: 43px;
+}
+.footer-wrap .guide-wrap .guide .logo div {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-wrap .guide-wrap .guide ul {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-wrap .guide-wrap .guide ul dl dd {
+  font-size: 12px;
+  height: 26px;
+  line-height: 26px;
+}
+.footer-wrap .guide-wrap .guide ul dl dt {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.footer-wrap .guide-wrap .guide .qr-code {
+  text-align: center;
+}
+.footer-wrap footer {
+  height: 160px;
+  background-color: #333;
+  color: #ccc;
+  font-size: 12px;
+  overflow: hidden;
+}
+.footer-wrap footer .first {
+  margin-top: 20px;
+}
+.footer-wrap footer a {
+  color: #ccc;
+}
+.footer-wrap footer div {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.footer-wrap footer div span {
+  padding-left: 20px;
 }

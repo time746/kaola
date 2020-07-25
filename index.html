@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./css/font.css">
   <link rel="stylesheet" href="./css/banner.css">
   <link rel="stylesheet" href="./css/goods-list.css">
+  <link rel="stylesheet" href="./css/aside.css">
+  <link rel="stylesheet" href="./css/iconfont.css">
 </head>
 <body>
   <!-- nav -->
@@ -54,96 +56,98 @@
   </nav>
 
   <!-- header -->
-  <header class="wrap">
-    <div class="operate">
-      <a href="#">
-        <img src="./assets/img/logo.png" alt="" class="logo">
-      </a>
-      <div class="search">
-        <i class="left-search">&#xe61a;</i>
-        <input type="text" placeholder="象印保温杯">
-        <span>
-          <i>&#xe61a;</i>
-        </span>
+  <header>
+    <div  class="wrap">
+      <div class="operate">
+        <a href="#">
+          <img src="./assets/img/logo.png" alt="" class="logo">
+        </a>
+        <div class="search">
+          <i class="left-search">&#xe61a;</i>
+          <input type="text" placeholder="象印保温杯">
+          <span>
+            <i>&#xe61a;</i>
+          </span>
+        </div>
+        <div class="cart">
+          购物车
+        </div>
       </div>
-      <div class="cart">
-        购物车
-      </div>
-    </div>
-    <div class="tab-bar">
-      <div class="all-category">
-        <div class="category">所有分类</div>
-        <ul class="category-item">
-          <li>
-            <i></i>
-            <span class="text">美容彩妆</span>
-            <i></i>
-          </li>
-          <li>
-            <i></i>
-            <span class="text">母婴儿童</span>
-            <i></i>
-          </li>
-          <li>
-            <i></i>
-            <span class="text">营养保健</span>
-            <i></i>
-          </li>
-          <li>
-            <i></i>
-            <span class="text">数码家电</span>
-            <i></i>
-          </li>
-          <li>
-            <i></i>
-            <span class="text">个护家清</span>
-            <i></i>
-          </li>
-          <li>
-            <i></i>
-            <span class="text">服饰鞋靴</span>
-            <i></i>
-          </li>
-          <li>
-            <i></i>
-            <span class="text">运动户外</span>
-            <i></i>
-          </li>
-          <li>
-            <i></i>
-            <span class="text">手表配饰</span>
-            <i></i>
-          </li>
-          <li>
-            <i></i>
-            <span class="text">轻奢</span>
-            <i></i>
-          </li>
-          <li>
-            <i></i>
-            <span class="text">家具生活</span>
-            <i></i>
-          </li>
-          <li>
-            <i></i>
-            <span class="text">环球美食</span>
-            <i></i>
-          </li>
-          <li>
-            <i></i>
-            <span class="text">宠物生活</span>
-            <i></i>
-          </li>
+      <div class="tab-bar">
+        <div class="all-category">
+          <div class="category">所有分类</div>
+          <ul class="category-item">
+            <li>
+              <i></i>
+              <span class="text">美容彩妆</span>
+              <i></i>
+            </li>
+            <li>
+              <i></i>
+              <span class="text">母婴儿童</span>
+              <i></i>
+            </li>
+            <li>
+              <i></i>
+              <span class="text">营养保健</span>
+              <i></i>
+            </li>
+            <li>
+              <i></i>
+              <span class="text">数码家电</span>
+              <i></i>
+            </li>
+            <li>
+              <i></i>
+              <span class="text">个护家清</span>
+              <i></i>
+            </li>
+            <li>
+              <i></i>
+              <span class="text">服饰鞋靴</span>
+              <i></i>
+            </li>
+            <li>
+              <i></i>
+              <span class="text">运动户外</span>
+              <i></i>
+            </li>
+            <li>
+              <i></i>
+              <span class="text">手表配饰</span>
+              <i></i>
+            </li>
+            <li>
+              <i></i>
+              <span class="text">轻奢</span>
+              <i></i>
+            </li>
+            <li>
+              <i></i>
+              <span class="text">家具生活</span>
+              <i></i>
+            </li>
+            <li>
+              <i></i>
+              <span class="text">环球美食</span>
+              <i></i>
+            </li>
+            <li>
+              <i></i>
+              <span class="text">宠物生活</span>
+              <i></i>
+            </li>
+          </ul>
+        </div>
+        <ul class="tab-item">
+          <li>首页</li>
+          <li>海外直邮</li>
+          <li>工厂店</li>
+          <li>品质奶粉</li>
+          <li>人气面膜</li>
+          <li>充值</li>
         </ul>
       </div>
-      <ul class="tab-item">
-        <li>首页</li>
-        <li>海外直邮</li>
-        <li>工厂店</li>
-        <li>品质奶粉</li>
-        <li>人气面膜</li>
-        <li>充值</li>
-      </ul>
     </div>
   </header>
 
@@ -186,10 +190,80 @@
   <!-- 商品展示 -->
   <article class="goods-container">
     <!-- 新人福利 -->
-    <section class="goods-app-download">
-      <img src="./assets/img/download.png" alt="">
+    <section class="app-download-wrap">
+      <div class="app-download wrap">
+        <img src="./assets/img/download.png" class="download" alt="">
+        <aside class="index-left">
+          <a href="#">
+            <img src="./assets/img/preferential.jpg" alt="">
+
+          </a>
+          <ul>
+            <li class="first">
+              <a href="#">
+                热门品牌
+              </a>
+            </li>
+            <li>
+              <a href="#">运动户外</a>
+            </li>
+            <li>
+              <a href="#">美妆专区</a>
+            </li>
+            <li>
+              <a href="#">个人家清</a>
+            </li>
+            <li>
+              <a href="#">轻奢馆</a>
+            </li>
+            <li>
+              <a href="#">手表配饰</a>
+            </li>
+            <li>
+              <a href="#">美食生鲜</a>
+            </li>
+            <li>
+              <a href="#">服饰鞋靴</a>
+            </li>
+            <li>
+              <a href="#">家具生活</a>
+            </li>
+            <li>
+              <a href="#">数码家电</a>
+            </li>
+            <li>
+              <a href="#">母婴专区</a>
+            </li>
+           
+            
+          </ul>
+        </aside>
+
+        <aside class="index-right">
+          <ul>
+            <li>
+              <i class="iconfont icon-qiandao"></i>
+              <span>签到</span>
+            </li>
+            <li>
+              <i class="iconfont icon-gouwuchezhengpin"></i>
+              <span>购物车</span>  
+            </li>
+            <li>
+              <i class="iconfont icon-app"></i>
+              <span>APP</span>
+            </li>
+            <li>
+              <i class="iconfont icon-top"></i>
+              <span>TOP</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
     </section>
+    <!-- 商品展示 -->
     <section class="goods-item wrap">
+      <!-- 标题 -->
       <div class="goods-title">
         <span class="goos-cate">运动户外</span>
         <ul class="hot-words">
@@ -209,6 +283,7 @@
         </ul>
         <a href="#" class="more-goods">更多好货</a>
       </div>
+      <!-- 信息 -->
       <div class="goods-img">
         <div class="goods-l">
           <a href="#">
@@ -300,27 +375,493 @@
         </div>
       </div>
     </section>
+    <!-- 热卖品牌 -->
+    <section class="hot-brand-wrap wrap">
+      <div class="hot-brand-title">
+        热卖品牌
+      </div>
+      <ul class="hot-brand-img">
+        <li>
+          <img src="./assets/img/brand-logo.jpg" alt="">
+        </li>
+        <li>
+          <img src="./assets/img/brand-logo.jpg" alt="">
+        </li>
+        <li>
+          <img src="./assets/img/brand-logo.jpg" alt="">
+        </li>
+        <li>
+          <img src="./assets/img/brand-logo.jpg" alt="">
+        </li>
+      </ul>
+    </section>
+
+    <!-- 热卖店铺 -->
+    <section class="hot-shop-wrap wrap">
+      <h2 class="hot-shop-title">
+        <span class="big">热卖品牌</span>
+        <span>全球精选,</span>
+        <span>一网打尽</span>
+        <span class="right">换一批</span>
+      </h2>
+      <div class="hot-shop-img">
+        <div class="shop-img-left">
+          <img src="./assets/img/hot-shop.jpg" alt="">
+          <div class="progress"></div>
+          <div class="shop-info">
+            <div>良品铺子</div>
+            <div>4亿人选择的零食食品</div>
+          </div>
+        </div>
+        <ul class="shop-img-right">
+          <li class="shop-img-item">
+            <div class="origin">
+              <img src="./assets/img/hot-shop.jpg" class="img" alt="">
+              <p class="hidden">好吃的都在三只松鼠</p>
+            </div>
+            <div class="hover">
+              <a href="#" class="follow">+关注</a>
+              <span class="followers">123123人关注改品牌</span>
+              <a href="#" class="enter">进入品牌</a>
+            </div>
+          </li>
+          <li class="shop-img-item">
+            <div class="origin">
+              <img src="./assets/img/hot-shop.jpg" class="img" alt="">
+              <p class="hidden">好吃的都在三只松鼠</p>
+            </div>
+            <div class="hover">
+              <a href="#" class="follow">+关注</a>
+              <span class="followers">123123人关注改品牌</span>
+              <a href="#" class="enter">进入品牌</a>
+            </div>
+          </li>
+          <li class="shop-img-item">
+            <div class="origin">
+              <img src="./assets/img/hot-shop.jpg" class="img" alt="">
+              <p class="hidden">好吃的都在三只松鼠</p>
+            </div>
+            <div class="hover">
+              <a href="#" class="follow">+关注</a>
+              <span class="followers">123123人关注改品牌</span>
+              <a href="#" class="enter">进入品牌</a>
+            </div>
+          </li>
+          <li class="shop-img-item">
+            <div class="origin">
+              <img src="./assets/img/hot-shop.jpg" class="img" alt="">
+              <p class="hidden">好吃的都在三只松鼠</p>
+            </div>
+            <div class="hover">
+              <a href="#" class="follow">+关注</a>
+              <span class="followers">123123人关注改品牌</span>
+              <a href="#" class="enter">进入品牌</a>
+            </div>
+          </li>
+          <li class="shop-img-item">
+            <div class="origin">
+              <img src="./assets/img/hot-shop.jpg" class="img" alt="">
+              <p class="hidden">好吃的都在三只松鼠</p>
+            </div>
+            <div class="hover">
+              <a href="#" class="follow">+关注</a>
+              <span class="followers">123123人关注改品牌</span>
+              <a href="#" class="enter">进入品牌</a>
+            </div>
+          </li>
+          <li class="shop-img-item">
+            <div class="origin">
+              <img src="./assets/img/hot-shop.jpg" class="img" alt="">
+              <p class="hidden">好吃的都在三只松鼠</p>
+            </div>
+            <div class="hover">
+              <a href="#" class="follow">+关注</a>
+              <span class="followers">123123人关注改品牌</span>
+              <a href="#" class="enter">进入品牌</a>
+            </div>
+          </li>
+          <li class="shop-img-item">
+            <div class="origin">
+              <img src="./assets/img/hot-shop.jpg" class="img" alt="">
+              <p class="hidden">好吃的都在三只松鼠</p>
+            </div>
+            <div class="hover">
+              <a href="#" class="follow">+关注</a>
+              <span class="followers">123123人关注改品牌</span>
+              <a href="#" class="enter">进入品牌</a>
+            </div>
+          </li>
+          <li class="shop-img-item">
+            <div class="origin">
+              <img src="./assets/img/hot-shop.jpg" class="img" alt="">
+              <p class="hidden">好吃的都在三只松鼠</p>
+            </div>
+            <div class="hover">
+              <a href="#" class="follow">+关注</a>
+              <span class="followers">123123人关注改品牌</span>
+              <a href="#" class="enter">进入品牌</a>
+            </div>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </section>
+
+    <!-- 商品展示2 -->
+    <section class="goods-item wrap">
+      <!-- 标题 -->
+      <div class="goods-title">
+        <span class="goos-cate">运动户外</span>
+        <ul class="hot-words">
+          <li>热搜词</li>
+          <li>
+            <a href="#">阿迪达斯</a>
+          </li>
+          <li>
+            <a href="#">耐克</a>
+          </li>
+          <li>
+            <a href="#">斯凯奇</a>
+          </li>
+          <li>
+            <a href="#">安德玛</a>
+          </li>
+        </ul>
+        <a href="#" class="more-goods">更多好货</a>
+      </div>
+      <!-- 信息 -->
+      <div class="goods-img">
+        <div class="goods-l">
+          <a href="#">
+            <img src="./assets/img/goods.jpg" alt="">
+          </a>
+          <ul class="goods-l-cat">
+            <li>男运动鞋</li>
+            <li>女运动鞋</li>
+            <li>运动服饰</li>
+            <li>速干T恤</li>
+            <li>健身服饰</li>
+            <li>户外背包</li>
+          </ul>
+        </div>
+        <div class="goods-c">
+          <a href="#" class="goods-c-i">
+            <h3>斯凯奇新品上市</h3>
+            <p>热门鞋款低至5.7折</p>
+            <img src="./assets/img/goods-s.jpg" alt="">
+          </a>
+          <a href="#" class="goods-c-i">
+            <h3>斯凯奇新品上市</h3>
+            <p>热门鞋款低至5.7折</p>
+            <img src="./assets/img/goods-s.jpg" alt="">
+          </a>
+          <a href="#" class="goods-c-i">
+            <h3>斯凯奇新品上市</h3>
+            <p>热门鞋款低至5.7折</p>
+            <img src="./assets/img/goods-s.jpg" alt="">
+          </a>
+          <a href="#" class="goods-c-i">
+            <h3>斯凯奇新品上市</h3>
+            <p>热门鞋款低至5.7折</p>
+            <img src="./assets/img/goods-s.jpg" alt="">
+          </a>
+        </div>
+        <div class="goods-r">
+          <h3>
+            最新热卖
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </h3>
+          <ul class="current-hot">
+            <li>
+              <img src="./assets/img/goods-s.jpg" alt="">
+              <div>
+                <span class="goods-desc">
+                  【防晒神器】Let's diet 韩国美肤光疗 防晒帽 防晒指数 UPF50+ 均码
+                </span>
+                <strong class="new-price">¥149</strong>
+                <strong class="old-price">¥119</strong>
+              </div>
+            </li>
+            <li>
+              <img src="./assets/img/goods-s.jpg" alt="">
+              <div>
+                <span class="goods-desc">
+                  【防晒神器】Let's diet 韩国美肤光疗 防晒帽 防晒指数 UPF50+ 均码
+                </span>
+                <strong class="new-price">¥149</strong>
+                <strong class="old-price">¥119</strong>
+              </div>
+            </li>
+            <li>
+              <img src="./assets/img/goods-s.jpg" alt="">
+              <div>
+                <span class="goods-desc">
+                  【防晒神器】Let's diet 韩国美肤光疗 防晒帽 防晒指数 UPF50+ 均码
+                </span>
+                <strong class="new-price">¥149</strong>
+                <strong class="old-price">¥119</strong>
+              </div>
+            </li>
+            <li>
+              <img src="./assets/img/goods-s.jpg" alt="">
+              <div>
+                <span class="goods-desc">
+                  【防晒神器】Let's diet 韩国美肤光疗 防晒帽 防晒指数 UPF50+ 均码
+                  
+                </span>
+                <strong class="new-price">¥149</strong>
+                <strong class="old-price">¥119</strong>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 猜你喜欢 -->
+    <section class="guess-like-wrap">
+      <div class="guess-like wrap">
+        <h4>
+          猜你喜欢
+          <span>根据你的浏览记录推荐的商品</span>
+        </h4>
+        <ul class="goods-item">
+          <li>
+            <!-- 图片 -->
+            <a href="#" class="img-wrap">
+              <img src="./assets/img/goods-s.jpg" alt="">
+            </a>
+            <!-- 介绍 -->
+            <p class="goods-info">
+              <a href="#">
+                【3盒装】LEADERS 丽得姿 美帝优补水面膜 25毫升/片 10片装 3盒装
+                【3盒装】LEADERS 丽得姿 美帝优补水面膜 25毫升/片 10片装 3盒装
+
+              </a>
+            </p>
+            <div class="goods-price">
+              <p>
+                ¥29  
+                <a href="#">15980人已评价</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <!-- 图片 -->
+            <a href="#" class="img-wrap">
+              <img src="./assets/img/goods-s.jpg" alt="">
+            </a>
+            <!-- 介绍 -->
+            <p class="goods-info">
+              <a href="#">
+                【3盒装】LEADERS 丽得姿 美帝优补水面膜 25毫升/片 10片装 3盒装
+                【3盒装】LEADERS 丽得姿 美帝优补水面膜 25毫升/片 10片装 3盒装
+
+              </a>
+            </p>
+            <div class="goods-price">
+              <p>
+                ¥29  
+                <a href="#">15980人已评价</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <!-- 图片 -->
+            <a href="#" class="img-wrap">
+              <img src="./assets/img/goods-s.jpg" alt="">
+            </a>
+            <!-- 介绍 -->
+            <p class="goods-info">
+              <a href="#">
+                【3盒装】LEADERS 丽得姿 美帝优补水面膜 25毫升/片 10片装 3盒装
+                【3盒装】LEADERS 丽得姿 美帝优补水面膜 25毫升/片 10片装 3盒装
+
+              </a>
+            </p>
+            <div class="goods-price">
+              <p>
+                ¥29  
+                <a href="#">15980人已评价</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <!-- 图片 -->
+            <a href="#" class="img-wrap">
+              <img src="./assets/img/goods-s.jpg" alt="">
+            </a>
+            <!-- 介绍 -->
+            <p class="goods-info">
+              <a href="#">
+                【3盒装】LEADERS 丽得姿 美帝优补水面膜 25毫升/片 10片装 3盒装
+                【3盒装】LEADERS 丽得姿 美帝优补水面膜 25毫升/片 10片装 3盒装
+
+              </a>
+            </p>
+            <div class="goods-price">
+              <p>
+                ¥29  
+                <a href="#">15980人已评价</a>
+              </p>
+            </div>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="collect-options">
+      <a href="#" class="wrap">《考拉海购会员权益规则》调整公开征集意见</a>
+    </section>
   </article>
-  <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-    <li>6</li>
-    <li>7</li>
-    <li>8</li>
-    <li>9</li>
-    <li>10</li>
-    <li>11</li>
-    <li>12</li>
-    <li>13</li>
-    <li>14</li>
-    <li>15</li>
-  </ul>
 
+  <div class="footer-wrap">
+    <!-- 征求意见 -->
+    <ul class="service wrap">
+      <li>
+        <strong class="icon">
+          正
+        </strong>
+        <div  class="info">
+          <strong>正品承诺</strong>
+          <span>正品承诺 假一赔十</span>
+        </div>
+      </li>
+      <li>
+        <strong class="icon">
+          正
+        </strong>
+        <div  class="info">
+          <strong>正品承诺</strong>
+          <span>正品承诺 假一赔十</span>
+        </div>
+      </li>
+      <li>
+        <strong class="icon">
+          正
+        </strong>
+        <div  class="info">
+          <strong>正品承诺</strong>
+          <span>正品承诺 假一赔十</span>
+        </div>
+      </li>
+      <li>
+        <strong class="icon">
+          正
+        </strong>
+        <div  class="info">
+          <strong>正品承诺</strong>
+          <span>正品承诺 假一赔十</span>
+        </div>
+      </li>
+    </ul>
 
-  <footer></footer>
+    <!-- 指南 -->
+    <div class="guide-wrap">
+      <div class="guide wrap">
+        <div class="logo">
+          <a href="#">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+          <div>
+            <span>关注我们</span>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <dl>
+              <dt>新手指南</dt>
+              <dd>购物流程</dd>
+              <dd>购物流程</dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>新手指南</dt>
+              <dd>购物流程</dd>
+              <dd>购物流程</dd>
+              <dd>购物流程</dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>新手指南</dt>
+              <dd>购物流程</dd>
+              <dd>购物流程</dd>
+              <dd>购物流程</dd>
+              <dd>购物流程</dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>新手指南</dt>
+              <dd>购物流程</dd>
+              <dd>购物流程</dd>
+              <dd>购物流程</dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>新手指南</dt>
+              <dd>购物流程</dd>
+              <dd>购物流程</dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>新手指南</dt>
+              <dd>购物流程</dd>
+              <dd>购物流程</dd>
+            </dl>
+          </li>
+        </ul>
+        <div class="qr-code" src="">
+          <img src="./assets/img/qr-code.png" alt="">
+          <div>扫码下载手机版</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+      <div class="first">
+        <a href="#">隐私政策</a>
+        <span>-</span>
+        <a href="#">考拉海购</a>
+      </div>
+      <div>
+        <span>增值电信业务经营许可证：浙B2-20160288</span>
+        <span>自营经营者信息 </span>
+        <span>（浙）网械平台备字[2018]第00007号</span>
+      </div>
+      <div>
+        <span><a href="#">
+          浙公网安备 33010802002216号
+        </a></span>
+        <span>自营经营者信息 </span>
+        <span>阿里巴巴版权所有©2003-2020</span>
+        <span>
+          <a href="#">
+            互联网药品信息服务资格证书编号（浙）-2017-0027
+          </a>
+        </span>
+        <span>
+          <a href="#">
+            浙ICP备16011229号
+          </a>
+        </span>
+      </div>
+    </footer>
+  </div>
+
   
 
 </body>

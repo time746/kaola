@@ -1,5 +1,6 @@
 header {
   position: relative;
+  background-color: #fff;
 }
 header .operate {
   height: 100px;
@@ -9,11 +10,13 @@ header .logo {
   position: relative;
   top: 50%;
   transform: translate(0, -50%);
+  
 }
 
 header a {
   display: block;
   height: 100%;
+  
 }
 
 header .search {
